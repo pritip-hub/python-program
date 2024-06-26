@@ -202,8 +202,247 @@ list methods:-
 list=[9,4,7,8,1]
 list .append(6)-sadds one element at the end of the list -[9,4,7,8,1,6]
 list.sort()=sort the element in assending order-[1,4,7,8,9]
-list sort(reverse =True)-sorts the element in decending order-[98741]
-list.reverse()-reversing the list-[18749]
+list sort(reverse =True)-sorts the element in decending order-[9,8,7,4,1]
+list.reverse()-reversing the list-[1,8,7,4,9]
 list.insert(idx,el)-insert the element at index
 list.remove(1)-remove  the ffirst occurance of element-[9,7,3,8,1]
 list.pop(idx)-remove element at index
+
+
+git:-
+-  git is a open source repository system where we can save ,manipulate,colaborate our code with any one else.
+-  in our software era ,everyone can use git system for their software development.
+- we also called git is a version control system.
+- git provides some tools to use their functionallity and features ex -github,gitlab,etc....
+
+
+
+Tuple in Python:-
+
+Tuple is a build in data type that lets us create immutable(the value can't be changeble) sequence of values.
+ex. tup (87,67,98,34,45)
+tup[8] -> 87
+tup[1] -> 67
+we can do the tuple as
+1. tupl()-> empty tuple
+2. tup2 (1) a tuple
+3. tup3 (34,67,89,20)-> tuple
+tuple has also satisfy the slicing propety.
+
+tuple methods:-
+
+tup.index(element) -> returns index of first occurrence
+
+tup.count(element) ->returns the count total occurrence
+
+ex. tup= (2,1,3,1)
+
+tup.index(1) -> 1
+tup.count(1) -> 2
+
+homework:-
+1. write a program to ask the user
+
+dictionary in python:
+
+- dictionary are used to store the data values in key :value pair
+- they are uderscored,mutable(changeable)& don't allow duplicate keys.
+- ex.
+dict = {
+    "name" : "shradha"
+    "cgpa" : 9,8,
+    "marks" :[98,96,95]
+}
+- the left part of the dictionary are keys and right side part in their values so dictionary contains key:value pair structure.
+
+
+
+Nested dictionary in python:-
+- dictionary also satisfy the nested property.
+- Dictionary under dictionary is called nested dictionary.
+- ex.
+student={
+    "name" :"mithum"
+    "score":{
+        "chem":98,
+        "math":87,
+        "phy":74
+    }
+}
+
+Dictionary methods:-
+
+1. myDict.keys()
+2. myDict.keys()
+myDict.keys()
+myDict.keys()
+myDict.update(newDict)- insert the specified items to the dictionary.
+
+set in python:-
+
+- set is Che collection of the unordered items.
+- Each element in the set must be unique & immutable (can't change).
+ex.
+nums = {1,2,3,4,5}
+set2= {5,8,9,4}
+
+set method :-
+
+1. set.add(element) -> adds an element
+2. set.remove(element) -> remove an element
+3. set.clear() -> clear all elements
+4. set.pop() -> remove a random value of set
+5. set.union(set2) -> combine both set values & returns a new set
+6. set.intersection(set2) -> combines the common value & returns a new set.
+ex.
+set1 = {1,2,3,2,4}
+set2 =(3,7,2,6,4)
+set1.union(set2) -> {1,2,3,4,6,7}
+set1 intersection(set2)-> {2,3,4}
+
+
+Loops in python:-
+- Loops are used to repeat instruction.
+- In python there are 2 loops - while loop,for loop
+1. while loop:-
+syntax_
+initialization
+while condition:
+   statement
+   increment/decrement
+
+
+   range() :-
+   - range function returns a sequence of numbers,starting from 0by defaults,and increaments by 1(by default),and stops before a specified number.
+
+
+
+   function:
+
+   - function is a block of statements that performs a specific task.
+   - syntax :-
+   def func_name(parameter 1, parameter 2...)
+   some statement
+   returns val
+   func-name(arg1,arg2...)#function call
+   
+   - functions are of 2 types in python
+   1. built-in-function-print(),len(),type(),range().........
+   2. user defied function -user can develop the function.
+
+
+   write a function to print the length of a list(list is the parameter)
+
+2. write a function to print the element of a list in a single line(list is the paraneter)
+
+3. write a function to find the factorial of n (n is the parameter)
+
+factorial means
+
+suppose i want to get the factorial of 5,
+
+syntax of factorial -> n! 1*2*3... n (n-1)
+
+
+4. write a function to convert USD to INR.
+
+
+
+
+object oriented programming in python:-
+
+- To map  with real world scenarios,we started using objects in code.this is called object oriented programming(oop).
+
+1st concept->
+2nd concept->
+3rd concept->
+
+class & object in python:-
+
+- class is a blue print for creating objects.
+ex. -> creating a class
+class student:
+      name="web bocket"
+
+ ex. - creating a object(instance)
+ s1 =Student()
+    print(s1.name)
+
+constructor:-
+__init__function (constructor):-
+- All class have a function called__init__(), which is always executed when the class is being initiated.
+
+ex. -> creating a class
+class Student:
+    def__init__(self,fullname):
+    self.name=fullname
+
+ex.->creating a objects1= student("web bocket")
+print(s1.name)
+
+note: The self parameter is a reference to the current instance of the class ,and is used to access variable that belongs to the class.
+
+
+class & instance Atributes :-
+university -> college1,college2,
+              student1
+
+ 
+ methods in python:-
+ - methods are function that belongs to objects.
+
+ ex. ->creating class
+ class Student:
+     def__init__(self,fullname):
+         self.name=fullname
+    def hello (self):
+         print("hello",self.name)
+
+  ex.>creating object
+  s1 =Student("rohan", 98)
+  s1.hello()
+
+
+
+  abstraction:
+hiding the impl
+
+  encapsulation:-
+  wrapping data and function into a single unit(object).
+
+
+
+Private(like) Attributes & Methods:
+
+- private attributes & methods are accessible from outside the class. anly within the class and
+the private class attrioutes are written in (attributes) attributes of a class, that call it private.
+
+
+Inheritance :-
+when one class (child class) derives the properties & methods of another class (parent class).
+syntax :- class car:
+      ------------
+class ToyotaCar(car):
+      ------------
+in python inheritance are of 3 types. I
+      ------------
+1. single inheritance
+
+2. Multi-level inheritance
+
+3. Multiple inheritance
+
+
+
+polymorphism:operator overloading:-
+
+- when the same operator is allowed to have different meaning accordingly to the context.
+- in that polymorphism we can use under functions.
+1. a+b->__add__
+2.a-b->__sub__
+__mul__
+__truediv__
+__mod__
+
+ex-(+)
+print(1+2)

@@ -7,9 +7,8 @@ else:
     print("you can't apply for licence")
 
 
-    #example for traffic lights
-    light= input("enterthe signal you see: ")
-
+#example for traffic lights
+light= input("enterthe signal you see: ")
 if(light=="red"):
      print("stop")
 elif(light=="green"):
@@ -50,13 +49,14 @@ print(list[1])#67
 print(list[2])#34
 print (len(list))#6
 
-
+#mark example
 marks=[32,76,98,67,56,90]
 print(marks[1:5])#[76,98,67,56]
 print(marks[3:5])
 print(marks[:5])
 print(marks[3:])
 
+#example of list method
 
 list= [2,1,3]
 list.append(5)
@@ -64,8 +64,10 @@ print(list) # [2,1,3,5]
 print(list.sort()) # is sorting for background of the list so that we can get the result none
 print(list) # when we print the sorteds list so we can get the result of [1,2,3] [1,2,3,5]
 print(list.sort(reverse=True)) # none
-print(list) #[3,2,1]
+print(list) #[5,3,2,1]
 print(list.reverse()) # none
-print(list) # [3,1,2]
+print(list) # [1,2,3,5]
 print(list.insert(1,4))
-print(list) # [2,4,1,3]
+print(list) # [1,4,2,3,5]
+list.pop(4)
+print(list)#[1,4,2,3]
